@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Righteous' ;
+    src: url(font/Righteous-Regular.ttf) format("truetype") ;
+}
+
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous' , sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #2821c0, #2635c9, #2845d1, #2d55d8, #3563de, #2076ea, #0588f3, #0099fb, #00b1ff, #00c8ff, #00dcff, #19eff8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 400px;
+    height: 500px;
+}
+
+.calculator div{
+    width: 100%;
+}
+
+.calculator .header{
+    height: 15%;
+    font-size: 30px;
+    background-color: rgb(77, 77, 255);
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.calculator .display{
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px;
+    font-size: 40px;
+    background-color: rgb(0, 0, 179);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: wheat;
+}
+.calculator .display.lower{
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 179);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: wheat;
+}
+
+.calculator .display .edit_me{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+.calculator .display .edit_me.lower{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.calculator .main{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 255);
+}
+
+.calculator .main .button-group{
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calculator .main .button-group.first button:last-child{
+    background-color: #2821c0 ;
+    color: white;
+}
+
+.calculator .main .button-group.last .button{
+    width: 49%;
+}
+.calculator .main .button-group.last .button:first-child{
+    background-color: #2821c0 ;
+    color: white;
+}
+.calculator .main .button-group.last .button:last-child{
+    background-color: rgb(255, 51, 51);
+    color: white;
+}
+
+.calculator .main .button-group .button{
+    width: 23%;
+    height: 90%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(230, 230, 250);
+}
+
+ 

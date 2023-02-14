@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wevice-winitial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="calculator">
+      <div class="header">
+        <p>Calculator</p>
+      </div>
+      <div class="display">
+        <div class="edit_me" data-current-operand></div>
+      </div>
+      <div class="main">
+        <div class="button-group first">
+          <button data-number class="button 7" id="keyboard-input">7</button>
+          <button data-number class="button 8">8</button>
+          <button data-number class="button 9">9</button>
+          <button data-delete class="button del">DEL</button>
+        </div>
+        <div class="button-group">
+          <button data-number class="button 4" >4</button>
+          <button data-number class="button 5" >5</button>
+          <button data-number class="button 6" >6</button>
+          <button data-operation class="button +" >+</button>
+        </div>
+        <div class="button-group">
+          <button data-number class="button 1">1</button>
+          <button data-number class="button 2">2</button>
+          <button data-number class="button 3">3</button>
+          <button data-operation class="button -">-</button>
+        </div> 
+        <div class="button-group">
+          <button data-dot id="dot" class="button .">.</button>
+          <button data-number class="button 0">0</button>
+          <button data-operation class="button /">/</button>
+          <button data-operation class="button *">*</button>
+        </div>
+        <div class="button-group last">
+          <button data-reset class="button reset">RESET</button>
+          <button data-equal class="button =">=</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
